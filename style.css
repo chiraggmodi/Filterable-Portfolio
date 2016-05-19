@@ -1,0 +1,91 @@
+#filter {
+    float: left;
+    font-size: 16px;
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
+}
+
+#filter li {
+    border-right: 1px solid #dedede;
+    float: left;
+    line-height: 16px;
+    margin-right: 10px;
+    padding-right: 10px;
+}
+
+#filter li:last-child {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+#filter a {
+    color: #999;
+    text-decoration: none;
+}
+
+#filter li.current a,
+#filter a:hover {
+    text-decoration: underline;
+}
+
+#filter li.current a {
+    color: #333;
+    font-weight: bold;
+}
+
+#portfolio {
+    float: left;
+    list-style: none;
+    margin-left: 0;
+    width: 100%;
+}
+
+#portfolio article {
+    float: left;
+    margin: 0 10px 10px 0;
+    padding: 5px;
+    width: 24.5%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    display: block;
+    line-height: 1.42857;
+    margin-bottom: 20px;
+    padding: 4px;
+    transition: border 0.2s ease-in-out 0s;
+    position: relative;
+}
+
+#portfolio article .thumbnail {
+    border: none;
+}
+
+figcaption {
+    font-size: 20px;
+    color: #000;
+    text-align: center;
+    margin: 6px 0;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+}
+
+#portfolio a {
+    display: block;
+    width: 100%;
+}
+
+#portfolio a:hover {
+    text-decoration: none;
+}
+
+#portfolio img {
+    display: block;
+    padding-bottom: 5px;
+}
+
+#portfolio article {
+    margin-right: 5px;
+}

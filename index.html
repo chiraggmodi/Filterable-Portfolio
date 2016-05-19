@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Filterable Portfolio</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div id="portfolio">
+            <article class=" cms integration">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/01.jpg">
+                        <figcaption>Thumbnail label</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+            <article class=" integration design">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/01.jpg">
+                        <figcaption>Apple</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+
+            <article class=" design development">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/03.jpg">
+                        <figcaption>CNN</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+
+            <article class=" cms">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/04.jpg">
+                        <figcaption>Digg</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+
+            <article class=" cms">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/05.jpg">
+                        <figcaption>ESPN</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+
+            <article class=" design integration">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/06.jpg">
+                        <figcaption>Facebook</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" information-architecture">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/07.jpg">
+                        <figcaption>NETTUTS</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" integration development">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/08.jpg">
+                        <figcaption>Google</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" information-architecture">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/09.jpg">
+                        <figcaption>Netflix</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" design information-architecture cms">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/10.jpg">
+                        <figcaption>Twitter</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" development">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/11.jpg">
+                        <figcaption>White House</figcaption>
+                    </a>
+                </figure>
+            </article>
+            <article class=" cms design">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/12.jpg">
+                        <figcaption>YouTube</figcaption>
+                    </a>
+                </figure>
+            </article>
+            
+            <article class=" cms design">
+                <figure class="thumbnail">
+                    <a href="#" class="thumbnailAnchor">
+                        <img src="images/12.jpg">
+                        <figcaption>YouTube</figcaption>
+                    </a>
+                </figure>
+            </article>
+
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="plugin.js"></script>
+    <script>
+        $(document).ready(function ($) {
+            $('#portfolio').filterable({
+                menuID: '#filter'
+
+            });
+
+
+        });
+    </script>
+</body>
+
+
+
+</html>

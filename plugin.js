@@ -10,7 +10,8 @@
             className = [];
         // Default options
         var settings = $.extend({
-            menuID: '#filter'
+            menuID: '#filter',
+            popup: true
         }, options);
         $.each(classNames, function (i, temVar) {
             className = $(this).attr("class").toString().split(' ');
@@ -22,9 +23,9 @@
 
         function resizeDiv() {
             var filterSelector = $(base).children();
-           var height = 0;
+            var height = 0;
             $(filterSelector).each(function () {
-                
+
                 if ($(this).height() > height) {
                     height = $(this).height();
                     height += 20;
@@ -60,8 +61,37 @@
             }
             $(base).before('<ul ' + NewFilter + ' ' + newFilterClass + ' ><li class="current"><a href="#">All</a></li>' + filterData + '</ul>');
         }
+
+        function imageFilterPopup() {
+            var dataAtt = $(classNames).find("[data-image]");
+            //$.each(dataAtt, function( index, value ) {
+
+            $(dataAtt).click(function (event) {
+                event.preventDefault();
+                dataAtt = $(this).data('image');
+                $('.Filterpopup').remove();
+                $('body').append('<div class="Filterpopup"><div class="popUpImageBlock"><img class="popupImage" class="img-responsive center-block" src="' + dataAtt + '" /></div></div>');
+                $('.Filterpopup').append('<span class="popupClose"><i class="fa fa-times" aria-hidden="true"></i></span>')
+            });
+            //});
+
+        }
+
+        function closePopup() {
+            $('body').click(function () {
+                $(this).find('.popupClose').click(function () {
+                    $('.Filterpopup').remove();
+                });
+
+            });
+        }
         filterFunction = function (el, options) {
             filterableMenu();
+            if (settings.popup == true) {
+                imageFilterPopup();
+                closePopup();
+            }
+
             var filterSelector = $(base).children();
 
 

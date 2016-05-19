@@ -89,3 +89,38 @@ figcaption {
 #portfolio article {
     margin-right: 5px;
 }
+
+.Filterpopup {
+    z-index: 55;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    left: 0px;
+    right: 0px;
+    margin: 0px auto;
+    text-align: center;
+    padding: 0px 10px;
+    height: 100%;
+    top: 0px;
+}
+
+.Filterpopup .popupImage {
+    display: block;
+    left: 0;
+    margin: 0 auto;
+    max-height: 90%;
+    padding-bottom: 5px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.popupClose {
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    position: absolute;
+    right: 11px;
+    top: 10px;
+    z-index: 555;
+}
